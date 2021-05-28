@@ -1,4 +1,3 @@
-from os import EX_TEMPFAIL, name
 from tkinter import *
 from typing import Sized
 from PIL import Image,ImageTk
