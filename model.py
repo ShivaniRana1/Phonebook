@@ -70,7 +70,6 @@ def much(entry):
     m.delete_one(entry)
     
 
-
 def delete_contact():
     hide_all_frames()
     global entry
@@ -82,11 +81,6 @@ def delete_contact():
     b = Button(file_delete_frame,text="REMOVE TEXT",command=lambda:entry.delete(0,END)).grid(row=7,column=1)
     b = Button(file_delete_frame,text="CONFIRM",command=lambda:much(entry.get())).grid(row=7,column=0)
     
-   
-    
-
-
-
 
 def hide_all_frames():
     file_new_frame.pack_forget()
@@ -108,17 +102,9 @@ file_menu.add_command(label="NEW",command=get_detail)
 file_menu.add_command(label="ALL CONTACT",command=show)
 file_menu.add_command(label="HOME",command=home)
 
-
-
-
 file_menu = Menu(my_menu)
 my_menu.add_cascade(label="EDIT",menu=file_menu,command=root.destroy)
 file_menu.add_command(label="EXIT",command=root.destroy)
 file_menu.add_command(label="REMOVE CONTACT",command=delete_contact)
 
-
-
-
 root.mainloop()
-
-
