@@ -1,0 +1,10 @@
+import tkinter 
+
+you don't have to imstall tkinter as it is already installed while installing python
+
+import datetime
+to get current time
+
+import sqlite3
+already in python
+
