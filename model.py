@@ -2,7 +2,7 @@ from tkinter import *
 import datetime
 from tkinter.font import Font
 from PIL import Image,ImageTk
-import modules as m
+import header as m
 
 root = Tk()
 root.title("shivani phonebook")
