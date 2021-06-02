@@ -9,9 +9,9 @@ root.title("shivani phonebook")
 root.iconbitmap('Photos/color.png')
 root.geometry("400x400")
 
-#my_img = ImageTk.PhotoImage(Image.open("Photos/phonebook.png"))
-#my_label = Label(image=my_img,pady=10)
-#my_label.pack()
+my_img = ImageTk.PhotoImage(Image.open("Photos/phonebook.png"))
+my_label = Label(image=my_img,pady=10)
+my_label.pack()
 
 label=Label(root,text='Today is {}/{}/{}'.format(datetime.datetime.now().year, datetime.datetime.now().month, datetime.datetime.now().day),fg="blue").pack()
 label=Label(root,text=" Welcome to Shivani's phonebook",font=("Arial", 25),fg="hotpink").pack()
