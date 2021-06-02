@@ -17,7 +17,6 @@ label=Label(root,text='Today is {}/{}/{}'.format(datetime.datetime.now().year, d
 label=Label(root,text=" Welcome to Shivani's phonebook",font=("Arial", 25),fg="hotpink").pack()
      
 def home():
-    
     hide_all_frames()
 
 def show():
@@ -94,12 +93,11 @@ def get_detail():
     phoneNo.config(state=DISABLED)
     phoneNo.bind("<Button-1>",click3)
 
-    #showing details
+
     button_create = Button(file_new_frame,text="CREATE",padx=5,pady=5,fg="black",command=lambda:create(name.get(),address.get(),email.get(),phoneNo.get())).grid(row=5,column=0)
 
 def much(entry):
-    #hide_all_frames()
-    #file_delete_frame.pack(fill="both",expand=1)
+
     m.delete_one(entry)
     
 
